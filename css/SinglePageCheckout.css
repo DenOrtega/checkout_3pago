@@ -3181,10 +3181,13 @@ hr {
   cursor: pointer;
   display: inline-block;
   font-family:  Open Sans;
-  font-size: 12px;
+  font-size: 14px;
   padding: 10px 58px;
   text-align: center;
   text-decoration: none;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+   border-radius: 16px;
 }
 .BottonPagar span{
   color: #ffffff;
