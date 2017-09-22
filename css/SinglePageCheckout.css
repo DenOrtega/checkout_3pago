@@ -131,14 +131,15 @@
 }
 
 #payment_details .BottonPagar{
-    margin-left: 22px !important;
-    width: 51% !important;
+    margin: auto !important;
+    width: 40% !important;
+    display: block;
 }
 #fieldsAreaSection .BottonPagar{
-    margin-left: 0 !important;
-    position: relative !important;
+    /*margin-left: 0 !important;
+    position: relative !important;*/
     right: 30px !important;
-    width: 66% !important;
+    width: 40% !important;
 }
 .instal-selct-box select {
     width: 101% !important;
@@ -151,8 +152,8 @@
 }
 
 #paymentMedium_5 .ContenedorPrice, #paymentMedium_11 .ContenedorPrice{
- right: 0 !important;
- width: 89% !important;
+ /*right: 0 !important;
+ width: 89% !important;*/
 }
 .fieldsAreaSectionBox {
     width: 100% !important;
@@ -1415,7 +1416,7 @@ div.msgpopup1 .msgpopup_content_wrapper .content .close .msgpopup1_x, div.msgpop
     left: 21%;*/
 }
 #checkoutBillingAddressForm .form_input input{
-	height: 35px;
+	   height: 35px;
     width: 58%;
     margin-bottom: 21px;
     padding-left: 15px;
@@ -1791,6 +1792,12 @@ div.tab button.active {
   border-radius: 16px;
   padding-left: 15px;
 }
+.DireccionInput:focus, .instal-selct-box select:focus, #checkout_billing_zipCode:focus, #checkout_billing_guestIdentity:focus, #ShipAddressForm #checkout_shipping_address3:focus, #checkoutBillingAddressForm .form_input input:focus{
+  box-shadow: 0px 0px 2px rgba(255, 159, 54, 0.74);
+  border:1px solid #ff9f36;
+  outline: none !important;
+}
+
 .BigInput{
   width: 97%;
 }
@@ -3113,7 +3120,9 @@ div[id^="novios_names_"]{
   /*right: 5%;*/
   text-align: right;
   margin-bottom: 14px;
-  width: 95%;
+  /*width: 95%;*/
+  padding: 0 30px;
+  color: #818180;
 }
 .ContenedorPrice p{
   margin-top: 0px;
@@ -3164,10 +3173,6 @@ div[id^="novios_names_"]{
     top: 10px;
 }
 
-hr {
-  background-color: black;
-  height: 1px;
-}
 .TotalPrice{
   font-family: Open Sans;
   font-size: 14px;
@@ -3185,9 +3190,9 @@ hr {
   padding: 10px 58px;
   text-align: center;
   text-decoration: none;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-   border-radius: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-border-radius: 16px; -moz-border-radius: 16px;border-radius: 16px;
 }
 .BottonPagar span{
   color: #ffffff;
@@ -3540,7 +3545,7 @@ a {
 #ClientLoginContainer table {margin: 0 auto; margin-top: 10px; margin-bottom: 20px; text-align: center; border: 2px solid #EBF4FB; padding: 10px 20px;}
 #ClientLoginContainer table#ClientLoginSubmit {border: 0 !important; margin: 0; padding: 0;}
 
-#ClientLoginBackground { position: fixed; z-index: 6; top: 0; left: 0; float: left; background-color:#000; opacity: .7; zoom:1; width: 100%; height:100%; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70);}
+#ClientLoginBackground { position: fixed; z-index: 6; top: 0; left: 0; float: left; background-color:#818180; opacity: .7; zoom:1; width: 100%; height:100%; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70);}
 
 .callCenterTable
      {width: 65%; height: 0px; display: block;
@@ -3907,7 +3912,7 @@ font-family:  Open Sans;
 
 /* CHECKOUT EOM EXCEPTION MODAL CHANGES*/
 
-#mhtn_background { position: fixed; z-index: 6; top: 0; left: 0; float: left; background-color:#000; opacity: .7; zoom:1; width: 100%; height:100%; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70);}
+#mhtn_background { position: fixed; z-index: 6; top: 0; left: 0; float: left; background-color:#818180; opacity: .7; zoom:1; width: 100%; height:100%; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70);}
 
 
 #mhtn_widget .overlay{
@@ -3924,7 +3929,7 @@ font-family:  Open Sans;
     width: 100%;
     padding: 3% 0%;
     margin: 0;
-    color: #000;
+    color: #818180;
     font-weight: bold;
   }
 
@@ -3970,7 +3975,7 @@ font-family:  Open Sans;
     text-align: center;
 }
 #mhtn_widget .lightboxContent,#modal_error .lightboxContent {
-    color: #000;
+    color: #818180;
     margin: 0 auto;
     /*MHTN DEFECT : 296*/
     width: 95%;
@@ -4016,7 +4021,7 @@ font-family:  Open Sans;
     width: 33%;
 }
 #mhtn_widget .item .status,#modal_error .item .status {
-    color: #000;
+    color: #818180;
     font-weight: bold;
 }
 #mhtn_widget .finalText,#modal_error .finalText {
@@ -4161,7 +4166,7 @@ font-family:  Open Sans;
     margin-left: 30px;
 }
 #mhtn_widget .qty .error {
-    color: #ff0000;
+    color: #ff8181800;
     display: inline-block;
     width: 290px;
 }
@@ -4437,18 +4442,14 @@ font-family:  Open Sans;
   }
 }
 
-.cbspay-dtls input:focus{
-	outline: none;
-	box-shadow: 0px 0px 5px rgba(255, 159, 54, 0.74);
-	border:1px solid #ff9f36;
-}
+
 .appliedPromotionCodeBox{
   margin-left: 16px;
 }
 .fieldsAreaSectionBox
 {
   width: 30%;
-  border: 0px solid #000;
+  border: 0px solid #818180;
   margin:0 auto;
 }
 
@@ -4484,6 +4485,7 @@ textarea{
 .cbspayment{   }
 .flt_lft{ float: left; }
 .cbspay-dtls input{ width: 95%; padding: 4px 5px;width: 97%; -webkit-border-radius: 16px; -moz-border-radius: 16px;border-radius: 16px;border: 1px solid #ccc;}
+.cbspay-dtls input:focus {border-color: #f27925;box-shadow: 0 0 2px #f27925;outline: none !important;}
 .cbspay-dtls label{ color:#8c8c8c;bottom: 6px;position: relative; font-size: 12px;}
 
 .card-numbr{ width:45%; }
@@ -4494,9 +4496,7 @@ textarea{
   /*padding-bottom: 10px;*/
   height: 64px;
 }
-.cbspay-dtls{
-  margin-bottom: 20px;
-}
+
 #fieldsAreaSection .error{
   font-family: Open Sans;
   font-size: 12px;
@@ -4507,15 +4507,13 @@ textarea{
 #fieldsAreaSection{
   margin-top: 16px;
 }
-.card-numbr label{   margin-top: 17px;    display: inline-block;    }
-.sample-msg{  	font-size: 9px;    font-style: italic;color: #8c8c8c;   }
+.card-numbr label{ margin-top: 17px;  display: inline-block;  }
+.sample-msg{ font-size: 9px; font-style: italic;color: #8c8c8c; }
 .instal-selct-box { padding-top: 15px; clear:both; }
 .instal-selct-box label{ margin-bottom : 9px; display:inline-block;color: #8c8c8c;font-size:12px;}
-.instal-selct-box select{padding: 5px 5px;height: auto;width: 99%;color: #8c8c8c;-webkit-border-radius: 16px;-moz-border-radius: 16px;border-radius: 16px;}
+.instal-selct-box select{ padding: 5px 5px; height: auto ; width: 99%; color: #8c8c8c;-webkit-border-radius: 16px;-moz-border-radius: 16px;border-radius: 16px;}
 .align-rght{ text-align : right; }
-.cbssub-total, .cbsdespcho-total, .cbsgdc-total, .cbsdiscnt-total, .cbsgrnd-total{    margin: 6px 5px;color: #000;
-    font-size: 14px;
-    letter-spacing: 0.5px;  }
+.cbssub-total, .cbsdespcho-total, .cbsgdc-total, .cbsdiscnt-total, .cbsgrnd-total{ margin: 6px 5px;color: #818180;font-size: 14px;letter-spacing: 0.5px;  }
 .price-detls{ padding-top:30px }
     .fields-area-section{ width: 330px; margin : 0 auto; }
  .cbsgrnd-total{ margin-bottom: 10px; }
@@ -4717,7 +4715,7 @@ textarea{
 /* For the dialog containing the progress bar element */
 #ext_progress_bar_dialog { position: absolute; z-index: 9999; display:none }
 /* Progress bar dialog background */
-.dijitDialogUnderlay { background-color: #000; opacity: .7; }
+.dijitDialogUnderlay { background-color: #818180; opacity: .7; }
 #ext_loading_popup { width:59px }
 #ext_loading_popup .top_left { background-image: url('../images/colors/color1/popup_topleft.png'); background-repeat:no-repeat; background-position:top; height:7px; width:8px; float:left }
 #ext_loading_popup .top_right { background-image: url('../images/colors/color1/popup_topright.png'); background-repeat:no-repeat; background-position:top right; height:7px; width:51px; float:left }
