@@ -4481,7 +4481,7 @@ textarea{
 }*/
 .cbspayment{   }
 .flt_lft{ float: left; }
-.cbspay-dtls input{ width: 95%; padding: 4px 5px;width: 97%;}
+.cbspay-dtls input{ width: 95%; padding: 4px 5px;width: 97%; -webkit-border-radius: 16px; -moz-border-radius: 16px;border-radius: 16px;border: 1px solid #ccc;}
 .cbspay-dtls label{ color:#8c8c8c;bottom: 6px;position: relative; font-size: 12px;}
 
 .card-numbr{ width:45%; }
