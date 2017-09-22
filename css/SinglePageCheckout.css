@@ -4434,11 +4434,10 @@ font-family:  Open Sans;
   }
 }
 
-
- .cbspay-dtls input:focus{
+.cbspay-dtls input:focus{
 	outline: none;
-	box-shadow: 0px 0px 5px #61C5FA;
-	border:1px solid #5AB0DB;
+	box-shadow: 0px 0px 5px rgba(255, 159, 54, 0.74);
+	border:1px solid #ff9f36;
 }
 .appliedPromotionCodeBox{
   margin-left: 16px;
